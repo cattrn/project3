@@ -103,3 +103,11 @@ res.send(data.users)
 
 
 
+// template file 
+
+const morgan = require('morgan')
+app.use(morgan('dev'))
+
+app.set('view engine', 'ejs')
+
+
