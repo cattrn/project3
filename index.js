@@ -111,3 +111,10 @@ app.use(morgan('dev'))
 app.set('view engine', 'ejs')
 
 
+// getting data from the index.ejs file and printing on browser 
+app.get ('/juliette', function(req,res) {
+    res.render('pages/index', {
+        myName: myName
+    })
+})
+
