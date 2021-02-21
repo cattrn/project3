@@ -102,7 +102,7 @@ app.post('/schedules', (req, res) => {
     res.send(data.schedules)
 })
 
-//import crypto library 
+// import crypto library 
 const crypto = require('crypto');
 
 
@@ -178,17 +178,16 @@ const database = require('./database')
 
 app.get('/', (req, res) => {
 
-    database.any('SELECT * from test;')
+    database.any('SELECT * from schedules;')
 
     //promise 
 
     .then((response) => {
         console.log(response)
-
     })
     
     .catch((err) => {
-        console.log(err.message)
+        console.log(err)
     })
 
     })
