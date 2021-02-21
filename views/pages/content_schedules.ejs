@@ -1,0 +1,14 @@
+
+
+<ul>
+
+    <% for(let i = 0; i < schedules.length; i ++) { %>
+        <li>
+            <p>User ID:</p><%= schedules[i].user_id %>
+            <p>Day:</p><%= schedules[i].day %>
+            <p>Starting Time:</p><%= schedules[i].start_at %>
+            <p>Finishing Time:</p><%= schedules[i].end_at %>
+        </li>
+        <% } %>
+
+</ul>
